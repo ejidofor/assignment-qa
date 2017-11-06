@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="HomePage Tests" verbose="2" annotations="JDK">
+	<test name="Functional Tests" junit="false">
+	    <groups>
+  	  		<run>
+  	  			<exclude name="InternetExplorer"></exclude>
+  	  			<exclude name="Firefox"></exclude>
+  	  			<include name="Chromium-Browser"></include>
+  	  		</run>
+  	 	</groups>
+  	 	<classes> 
+  	 		<class name="run.RunWebPages"></class>
+  	 	</classes>
+  	 </test> 
+  <!-- include a listener to capture the screenshot -->
+</suite>
